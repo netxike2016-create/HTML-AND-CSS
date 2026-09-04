@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Định dạng CSS FONT-TEXT</title>
+<style>
+    body {
+        font-family: "Times New Roman", Times, serif;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+    
+    .container {
+        max-width: 650px;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 28px;
+        color: black;
+        /* Tạo hiệu ứng bóng mờ màu đỏ cam tỏa ra xung quanh chữ */
+        text-shadow: 0px 5px 12px rgba(255, 69, 0, 0.8), 0px -2px 10px rgba(255, 69, 0, 0.5);
+        margin-bottom: 25px;
+    }
+    
+    .paragraph {
+        text-align: justify; /* Căn đều hai bên lề */
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    
+    .text-red-bold {
+        color: red;
+        font-weight: bold;
+    }
+    
+    .text-blue-italic {
+        color: blue;
+        font-style: italic;
+    }
+    
+    .footer {
+        text-align: right;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    
+    .footer-link {
+        text-decoration: underline;
+        color: #4a5568; /* Màu xám sẫm */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>CSS FONT-TEXT</h1>
+    
+    <p class="paragraph">
+        On the Insert tab, the <span class="text-red-bold">galleries</span> include items that are designed to coordinate
+        with the overall look of your document. You can use these galleries to insert
+        tables, headers, footers, lists, cover pages, and other document building blocks.
+        When you create <span class="text-blue-italic">pictures, charts, or diagrams</span> , they also coordinate with your
+        current document look.
+    </p>
+
+    <div class="footer">
+        <span class="footer-link">Microsoft</span>
+    </div>
+</div>
+
+</body>
+</html>
